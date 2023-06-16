@@ -7,8 +7,15 @@ const productsStack={
 const acumulatorStack={
     tab:"AccumulatorTab",
 };
+const accountStack = {
+    tab: "AccountTab",
+    account: "Account", //stack
+    login: "Login",
+    register: "Register",
+};
 
 export const screen={
     products:productsStack,
     acumulator:acumulatorStack,
+    account: accountStack,
 }

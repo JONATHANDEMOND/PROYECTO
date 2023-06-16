@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   
     content: {
-        
+    backgroundColor: "#FFA07A",
     marginHorizontal: 20,
     marginTop: 30,
   },
