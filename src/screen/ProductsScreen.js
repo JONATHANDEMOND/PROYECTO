@@ -4,6 +4,8 @@ import { ListItem } from "@rneui/themed";
 import products from "../utils/productsBase";
 import { useNavigation } from "@react-navigation/native";
 import { screen } from "../utils/screenName";
+import { Image } from "@rneui/themed";
+import { styles } from "../screen/DetailProductsScreen.styles";
 const ProductsScreen = () => {
   const navigation = useNavigation();
   //  const goToDetailProduct = () => {
@@ -12,6 +14,7 @@ const ProductsScreen = () => {
   // };
   return (
     <View>
+
       {products.map((product) => {
         return (
           <ListItem
@@ -21,8 +24,7 @@ const ProductsScreen = () => {
           >
             <ListItem.Content>
               <ListItem.Title>{product.name}</ListItem.Title>
-              <ListItem.Subtitle>{product.price}</ListItem.Subtitle>
-              <ListItem.Subtitle>{product.detail}</ListItem.Subtitle>
+              
             </ListItem.Content>
           </ListItem>
         );
