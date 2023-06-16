@@ -22,6 +22,7 @@ const ProductsScreen = () => {
             <ListItem.Content>
               <ListItem.Title>{product.name}</ListItem.Title>
               <ListItem.Subtitle>{product.price}</ListItem.Subtitle>
+              <ListItem.Subtitle>{product.detail}</ListItem.Subtitle>
             </ListItem.Content>
           </ListItem>
         );

@@ -11,7 +11,8 @@ const DetailProductsScreen=({route})=> {
     <View>
       <Text>{product.name}</Text>
       <Text>{product.price}</Text>
-      <Text>{product.price}</Text>
+      <Text>{product.detail}</Text>
+      
     </View>
   )
 };
