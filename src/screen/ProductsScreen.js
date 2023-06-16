@@ -14,8 +14,8 @@ const ProductsScreen = () => {
   // };
   return (
     <View>
-
       {products.map((product) => {
+        
         return (
           <ListItem
             onPress={() =>
@@ -24,7 +24,6 @@ const ProductsScreen = () => {
           >
             <ListItem.Content>
               <ListItem.Title>{product.name}</ListItem.Title>
-              
             </ListItem.Content>
           </ListItem>
         );

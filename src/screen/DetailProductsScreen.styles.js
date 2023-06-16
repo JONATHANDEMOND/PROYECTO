@@ -1,6 +1,8 @@
 import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
-  content: {
+  
+    content: {
+        
     marginHorizontal: 20,
     marginTop: 30,
   },
@@ -19,3 +21,4 @@ export const styles = StyleSheet.create({
 
   },
 });
+

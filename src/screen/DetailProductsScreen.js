@@ -6,7 +6,7 @@ import { Image } from "@rneui/themed";
 
 const DetailProductsScreen = ({ route }) => {
   const product = route.params;
-  console.log(product);
+  
 
   return (
     <ScrollView>

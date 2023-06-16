@@ -2,6 +2,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { screen } from "../utils/screenName";
 import DetailProductsScreen from "../screen/DetailProductsScreen";
 import ProductsScreen from "../screen/ProductsScreen";
+import { Image } from "@rneui/themed";
 const Stack = createNativeStackNavigator();
 
 export const ProductsStack = () => {
@@ -10,7 +11,8 @@ export const ProductsStack = () => {
       <Stack.Screen
         name={screen.products.products}
         component={ProductsScreen}
-        options={{ title: "Productos" }}
+        options={{ title: "" }}
+
       />
       <Stack.Screen
         name={screen.products.detailProduct}
