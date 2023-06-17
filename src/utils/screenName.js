@@ -4,9 +4,7 @@ const productsStack={
     detailProduct: "DetailProducts",
 
 };
-const acumulatorStack={
-    tab:"AccumulatorTab",
-};
+
 const accountStack = {
     tab: "AccountTab",
     account: "Account", //stack
@@ -16,6 +14,6 @@ const accountStack = {
 
 export const screen={
     products:productsStack,
-    acumulator:acumulatorStack,
+  
     account: accountStack,
 }

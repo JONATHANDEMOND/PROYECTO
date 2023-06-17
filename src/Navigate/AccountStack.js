@@ -1,8 +1,9 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { screen } from "../utils/screenName";
-import AccountScreen from "../screens/Account/AccountScreen";
-import LoginScreen from "../screens/Account/LoginScreen/LoginScreen";
-import RegisterScreen from "../screens/Account/RegisterScreen/RegisterScreen";
+import AccountScreen from"../screen/AccountScreen";
+import LoginScreen from "../components/Account/LoginScreen/LoginScreen";
+import RegisterScreen from "../components/Account/RegisterScreen/RegisterScreen";
+
 
 const Stack = createNativeStackNavigator();
 
@@ -10,17 +11,17 @@ const AccountStack = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name={screen.accounts.accounts}
+        name={screen.account.account}
         component={AccountScreen}
         options={{ title: "Cuenta" }}
       />
       <Stack.Screen
-        name={screen.accounts.login}
+        name={screen.account.login}
         component={LoginScreen}
         options={{ title: "Iniciar Sesión" }}
       />
       <Stack.Screen
-        name={screen.accounts.register}
+        name={screen.account.register}
         component={RegisterScreen}
         options={{ title: "Registrarse" }}
       />

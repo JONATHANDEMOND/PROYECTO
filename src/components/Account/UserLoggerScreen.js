@@ -1,11 +1,15 @@
-import { View, Text } from "react-native";
+import { View, Text, Image, ScrollView  } from "react-native";
 import React from "react";
+
 
 const UserLoggerScreen=()=> {
   return (
-    <View>
-      <Text>UserLoggerScreen - Si Login</Text>
-    </View>
+    <ScrollView>
+      <Image
+        source={require("../../../../assets/img/compu.jpg")}
+        style={styles.image}
+      />
+      </ScrollView>
   );
 };
 

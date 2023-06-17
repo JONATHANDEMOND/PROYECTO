@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { View, Text } from "react-native";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
+import {getAuth, onAuthStateChanged} from "firebase/auth";
+
 import UserGuestScreen from "./UserGuestScreen/UserGuestScreen";
 import UserLoggerScreen from "./UserLoggerScreen";
 

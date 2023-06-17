@@ -9,7 +9,7 @@ import { useNavigation } from "@react-navigation/native";
 const UserGuestScreen = () => {
   const navigation = useNavigation();
   const goToLogin = () => {
-    navigation.navigate(screen.accounts.login);
+    navigation.navigate(screen.account.login);
   };
 
   return (

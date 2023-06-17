@@ -1,4 +1,4 @@
-//rnf
+
 
 import React from "react";
 
@@ -19,7 +19,7 @@ const LoginScreen = () => {
   const navigation = useNavigation();
 
   const goToRegister = () => {
-    navigation.navigate(screen.accounts.register);
+    navigation.navigate(screen.account.register);
   };
 
   return (

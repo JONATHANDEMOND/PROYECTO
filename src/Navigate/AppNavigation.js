@@ -2,8 +2,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import {screen} from "../utils/screenName"
 import { Icon } from '@rneui/base';
 import { View, Text } from 'react-native';
-import { ProductsStack } from "./ProductsStack";
-import AcumulatorScreen from "../screen/AcumulatorScreen";
+import  {ProductsStack}  from "./ProductsStack";
+import AccountStack from "./AccountStack";
 const Tab=createBottomTabNavigator();
 
 export const AppNavigation=()=>{
@@ -24,9 +24,9 @@ export const AppNavigation=()=>{
             />
              
           <Tab.Screen
-            name={screen.acumulator.tab}
-           component={AcumulatorScreen}
-            options={{title: "AcumuA+lador"}}
+            name={screen.account.tab}
+           component={AccountStack}
+            options={{title: "CUENTA "}}
            />
         </Tab.Navigator>
     )
@@ -38,7 +38,7 @@ const screenOptions = (route, color, size) => {
       iconName = "compass-outline";
     }
     
-    if (route.name == screen.acumulator.tab) {
+    if (route.name == screen.account.tab) {
       iconName = "linux";
     }
     return (
