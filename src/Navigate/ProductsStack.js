@@ -11,7 +11,7 @@ export const ProductsStack = () => {
       <Stack.Screen
         name={screen.products.products}
         component={ProductsScreen}
-        options={{ title: "" }}
+        options={{ title: "PRODUCTO" }}
 
       />
       <Stack.Screen

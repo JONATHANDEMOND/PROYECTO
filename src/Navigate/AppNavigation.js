@@ -10,7 +10,7 @@ export const AppNavigation=()=>{
     return (
         <Tab.Navigator
         screenOptions={({ route }) => ({
-            headerShown: true,
+          headerShown: false,
             tabBarActiveTintColor: "#2C3E50",
             tabBarInactiveTintColor: "#251180",
             tabBarIcon: ({ color, size }) => screenOptions
@@ -18,6 +18,7 @@ export const AppNavigation=()=>{
           })}
           >
             <Tab.Screen
+            
             name={screen.products.tab}
             component={ProductsStack}
             options={{title: "Productos"}}

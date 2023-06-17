@@ -23,7 +23,7 @@ const ProductsScreen = () => {
             }
           >
             <ListItem.Content>
-              <ListItem.Title>{product.name}</ListItem.Title>
+              <ListItem.Title key={product.name}>{product.name}</ListItem.Title>
             </ListItem.Content>
           </ListItem>
         );
